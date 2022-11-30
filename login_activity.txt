@@ -1,0 +1,14 @@
+User log-in attempt: test, Date: 2022-07-27, Time: 10:31:25.671432500 - SUCCESS
+User log-in attempt: test, Date: 2022-07-27, Time: 10:33:19.800611500 - SUCCESS
+User log-in attempt: test, Date: 2022-07-27, Time: 10:34:11.755887600 - SUCCESS
+User log-in attempt: test, Date: 2022-07-27, Time: 10:34:59.422906300 - SUCCESS
+User log-in attempt: test, Date: 2022-07-27, Time: 10:35:33.768989700 - SUCCESS
+User log-in attempt: test, Date: 2022-07-27, Time: 10:37:32.981029500 - SUCCESS
+User log-in attempt: test, Date: 2022-07-27, Time: 10:38:17.306958100 - SUCCESS
+User log-in attempt: test, Date: 2022-07-27, Time: 10:40:00.972594400 - SUCCESS
+User log-in attempt: test, Date: 2022-07-27, Time: 10:47:40.801075900 - FAIL
+User log-in attempt: test, Date: 2022-07-27, Time: 10:47:44.007688 - FAIL
+User log-in attempt: test, Date: 2022-07-27, Time: 11:06:11.042213600 - SUCCESS
+User log-in attempt: test, Date: 2022-07-27, Time: 11:08:33.114740900 - SUCCESS
+User log-in attempt: test, Date: 2022-08-10, Time: 14:37:32.783524500 - SUCCESS
+User log-in attempt: test, Date: 2022-08-10, Time: 14:50:59.937430700 - SUCCESS
