@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Label layoutX="166.0" layoutY="58.0" text="Upcoming Appointment">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="173.0" layoutY="148.0" text="There is an appointment in the next 15 minutes!" />
+      <Label fx:id="upcomingAppointmentLabel" layoutX="172.0" layoutY="185.0" prefHeight="77.0" prefWidth="254.0" textAlignment="CENTER" textFill="#8d1010" />
+      <Button fx:id="closeButton" layoutX="273.0" layoutY="312.0" mnemonicParsing="false" text="Continue" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="customerIDColumn" prefHeight="688.0" prefWidth="1313.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <TableView fx:id="customerTable" layoutX="55.0" layoutY="90.0" prefHeight="208.0" prefWidth="1201.0">
+        <columns>
+          <TableColumn fx:id="customerIDCol" prefWidth="77.0" text="Customer ID" />
+          <TableColumn fx:id="customerNameCol" prefWidth="107.0" text="Customer Name" />
+            <TableColumn fx:id="customerAddressCol" prefWidth="135.0" text="Address" />
+            <TableColumn fx:id="customerPostalCol" prefWidth="77.0" text="Postal Code" />
+            <TableColumn fx:id="customerPhoneCol" prefWidth="138.0" text="Phone Number" />
+            <TableColumn fx:id="customerCreationDateCol" prefWidth="94.0" text="Creation Date" />
+            <TableColumn fx:id="customerCreatedByCol" prefWidth="102.0" text="Created By" />
+            <TableColumn fx:id="customerLastUpdateCol" prefWidth="94.0" text="Last Update" />
+            <TableColumn fx:id="customerLastUpdatedByCol" prefWidth="110.0" text="Last Updated By" />
+            <TableColumn fx:id="customerDivisionIDCol" prefWidth="138.0" text="Division ID" />
+            <TableColumn fx:id="customerCountryCol" prefWidth="128.0" text="Country" />
+        </columns>
+      </TableView>
+      <TableView fx:id="appointmentTable" layoutX="53.0" layoutY="368.0" prefHeight="208.0" prefWidth="1201.0">
+        <columns>
+          <TableColumn fx:id="appointmentIDCol" prefWidth="98.0" text="AppointmentID" />
+          <TableColumn fx:id="appointmentTitleCol" prefWidth="52.0" text="Title" />
+            <TableColumn fx:id="apointmentDescriptionCol" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="appointmentLocationCol" prefWidth="75.0" text="Location" />
+            <TableColumn fx:id="appointmentTypeCol" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="appointmentStartCol" prefWidth="75.0" text="Start" />
+            <TableColumn fx:id="appointmentEndCol" prefWidth="75.0" text="End" />
+            <TableColumn fx:id="appointmentCreationCol" prefWidth="93.0" text="Creation Date" />
+            <TableColumn fx:id="appointmentCreatedByCol" prefWidth="77.0" text="Created By" />
+            <TableColumn fx:id="appointmentUpdatedCol" prefWidth="74.0" text="Last Update" />
+            <TableColumn fx:id="appointmentUpdatedByCol" prefWidth="113.0" text="Last Updated By" />
+            <TableColumn fx:id="appointmentCustomerIDCol" prefWidth="94.0" text="Customer ID" />
+            <TableColumn fx:id="appointmentUserIDCol" prefWidth="104.0" text="User ID" />
+            <TableColumn fx:id="appointmentContactIDCol" prefWidth="119.0" text="Contact ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="54.0" layoutY="44.0" prefHeight="47.0" prefWidth="146.0" text="Customers">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Label layoutX="53.0" layoutY="321.0" prefHeight="47.0" prefWidth="291.0" text="Appointments">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Button layoutX="212.0" layoutY="55.0" mnemonicParsing="false" onAction="#switchToAddCustomer" text="Add" />
+      <Button layoutX="269.0" layoutY="55.0" mnemonicParsing="false" onAction="#modifyCustomer" text="Modify" />
+      <Button layoutX="344.0" layoutY="55.0" mnemonicParsing="false" onAction="#deleteCustomer" text="Delete" />
+      <Button layoutX="231.0" layoutY="332.0" mnemonicParsing="false" onAction="#switchToAddAppointment" text="Add" />
+      <Button layoutX="304.0" layoutY="332.0" mnemonicParsing="false" onAction="#modifyAppointment" text="Modify" />
+      <Button layoutX="380.0" layoutY="332.0" mnemonicParsing="false" onAction="#deleteAppointment" text="Delete" />
+      <Label fx:id="customerErrorLabel" layoutX="416.0" layoutY="52.0" prefHeight="25.0" prefWidth="395.0" textFill="#bc1111" />
+      <Label fx:id="appointmentErrorLabel1" layoutX="473.0" layoutY="336.0" prefHeight="17.0" prefWidth="408.0" textFill="#971212" />
+      <Label fx:id="errorDescription" layoutX="507.0" layoutY="612.0" prefHeight="17.0" prefWidth="341.0" textAlignment="CENTER" textFill="#a40e0e" />
+      <MenuBar prefHeight="25.0" prefWidth="1297.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#closeApplication" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Print">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#generateReport" text="Reports" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <RadioButton fx:id="noFilter" layoutX="818.0" layoutY="336.0" mnemonicParsing="false" onAction="#noFilterFunction" text="No Filter" />
+      <RadioButton fx:id="filterByMonth" layoutX="973.0" layoutY="336.0" mnemonicParsing="false" onAction="#filterByMonthFunction" text="This Month" />
+      <RadioButton fx:id="filterByWeek" layoutX="1112.0" layoutY="336.0" mnemonicParsing="false" onAction="#filterByWeekFunction" text="This Week" />
+   </children>
+</AnchorPane>
